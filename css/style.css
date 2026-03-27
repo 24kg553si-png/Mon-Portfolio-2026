@@ -3,8 +3,8 @@
     --violet-foncee: #534EDD;
     --orange-vif: #FFA726;
     --gris-tres-fonce: #333;
-    --gris-fonce : #5c5959;
-    --gris-claire: #EEE;
+    --gris-fonce : #615e5e;
+    --gris-claire: #fffafa;
 }
 
 * {
@@ -107,7 +107,7 @@ a.active::after {
 }
 
 .hero p {
-    color: var(--gris-tres-fonce);
+    color: var(--gris-claire);
     font-size: 1.3rem;
     margin-bottom: 1.2rem;
 }
@@ -157,6 +157,69 @@ section h2::after {
 .apropos p {
     margin-bottom: 2rem;
     color: var(--gris-fonce);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
+.competences table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #f8f8f8;
+    box-shadow: 0 5px 15px rgba(0 ,0 , 0, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.competences table th, .competences table td {
+    padding: 15px;
+}
+
+.competences table thead {
+    background-color: var(--violet-doux);
+    color: #f8f8f8;
+    text-transform: uppercase;
+}
+
+.competences table tbody td {
+    border-bottom: 1px solid var(--gris-claire);
+}
+
+ .competences table tbody tr:nth-child(even) {
+    background-color: #fdfdfd;
+ }
+
+ .competences table tr {
+    transition: background-color 0.3s ease;
+ }
+
+ .competences table tbody tr:hover {
+    background-color: #f0f0f0;
+ }
+
+ .competences table thead th {
+    text-align: left;
+ }
+
+ footer {
+    margin-top: 3rem;
+    background-color: var(--violet-doux);
+    padding: 3rem 0;
+    text-align: center;
+ }
+ footer p {
+    color: white;
+    margin-bottom: 1.2rem;
+ }
+
+ footer a {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.2s ease;
+ }
+
+ footer a:hover {
+    color: var(--orange-vif);
+    transform: translateY(-3px);
+ }
